@@ -4,6 +4,16 @@
   <link rel="stylesheet" href="css.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  .background { 
+            position: absolute; 
+            height: 100%; 
+            width: 100%; 
+            background-image: url(pod2.jpg); 
+            background-size: cover; 
+            background-position: center; 
+            filter: blur(10px); 
+            z-index: -1; 
+        } 
   #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -27,7 +37,7 @@
 /* Center the loader */
 #loader {
  background:#000 url(gif.gif) no-repeat center center ;
- background-size: ;
+ background-size: 75%;
  height: 100vh;
  width: 100%;
  position: fixed;
@@ -46,7 +56,8 @@
 <div class="bg-image"></div>
 
 <div class="bg-text">
-  <img src="nasa.png" height="500" width="600" href>
+  <img src="podlogo.png" height="860" width="600" href>
+  
 </div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
@@ -82,7 +93,7 @@ function topFunction() {
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 5300);
+  myVar = setTimeout(showPage, 5000);
 }
 
 function showPage() {
